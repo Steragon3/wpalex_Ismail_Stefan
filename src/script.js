@@ -1,12 +1,6 @@
-import './sass/styles.scss';
-import './script.js';
-require.context('./images', true);
-
-console.log('Hello Alex!');
-
 document.addEventListener("DOMContentLoaded", () => {
     const burgerButton = document.querySelector("#burger-button")
-    const navLinks = document.querySelector(".menu")
+    const navLinks = document.querySelector(".menu")[0]
 
     burgerButton.addEventListener("click", () => {
         burgerButton.classList.toggle("is-active")
@@ -21,4 +15,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 })
-
