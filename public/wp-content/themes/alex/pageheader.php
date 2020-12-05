@@ -13,9 +13,8 @@
 
             wp_nav_menu( array( 'theme_location' => 'main-navigation' ) );
 
-            
-            
-
+            $post = get_post();
+            $thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
             ?>
             <!-- <ul id ="navigation" class="nav-links">
                 <li><a href="#"><span class="active">Start</span></a></li>
@@ -26,7 +25,7 @@
             </ul> -->
         </nav>
     </div>
-    <section class="hero">
+    <section class="hero" style="background: url('<?php echo $thumb; ?>'); background-size: cover;">
         <div>
             <h1>
                 <mark>Glänzende Ideen für leuchtende Augen</mark>
