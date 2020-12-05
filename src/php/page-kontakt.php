@@ -1,6 +1,6 @@
 <?php 
     get_header();
-    echo "<section class='contact'>";
+    echo "<section class='single-post'>";
     if(have_posts()){
         while(have_posts()){
             the_post();
