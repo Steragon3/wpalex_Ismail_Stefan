@@ -6,7 +6,7 @@
         }
     }
     @else if($medium == largescreens){
-        @media only screen and (min-width: 1824px){
+        @media only screen and (min-width: 2300px){
             @content;
         }
     }
@@ -21,7 +21,7 @@
         }
     }
     @else if($medium == bigdesk){
-        @media only screen and (min-width: 1535px) and (max-width: 1823px){
+        @media only screen and (min-width: 1535px) and (max-width: 2300px){
             @content;
         }
     }
