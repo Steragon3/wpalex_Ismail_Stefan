@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelector("#menu-header-menu")
 
     burgerButton.addEventListener("click", () => {
-        console.log("click")
         burgerButton.classList.toggle("is-active")
         navLinks.classList.toggle("active-links")
         

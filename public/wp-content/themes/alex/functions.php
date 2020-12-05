@@ -2,8 +2,8 @@
 
 // enqueue scripts and styles
 function enqueue_scripts_and_styles() {
-    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.92017458f82d591313f5.css?b1826b670882921a476f', array(), null, false);
-    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?b1826b670882921a476f', array(), null, false );
+    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.c1725c4014a32cda97f5.css?c4ba4d0878659912d59f', array(), null, false);
+    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?c4ba4d0878659912d59f', array(), null, false );
 }
 
 // enable dynamic title tags

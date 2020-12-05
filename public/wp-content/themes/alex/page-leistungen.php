@@ -1,6 +1,5 @@
 <?php 
     get_header();
-    require_once("pageheader.php");
 ?>
 
 <?php

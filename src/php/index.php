@@ -1,8 +1,6 @@
 <?php 
     get_header();
     
-    require_once("pageheader.php");
-
     echo "<div class='wrapper'><main>";
 
     if(have_posts()){
