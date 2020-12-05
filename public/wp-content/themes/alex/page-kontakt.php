@@ -1,6 +1,7 @@
 <?php 
     get_header();
-    echo "<section class='single-post'>";
+    echo "<div class='wrapper'><main>";
+    echo "<section>";
     if(have_posts()){
         while(have_posts()){
             the_post();
@@ -11,6 +12,7 @@
         echo "<p>Ich kann derzeit nicht kontaktiert werden.</p>";
     }
     echo "</section>";
+    echo "</main></div>";
     wp_reset_postdata();
     get_footer();
 ?>
