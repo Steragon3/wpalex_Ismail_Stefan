@@ -15,6 +15,7 @@
 
             $post = get_post();
             $thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+            $hero_text = get_post_custom_values("heading")[0];
             ?>
             <!-- <ul id ="navigation" class="nav-links">
                 <li><a href="#"><span class="active">Start</span></a></li>
@@ -28,7 +29,7 @@
     <section class="hero" style="background: url('<?php echo $thumb; ?>'); background-size: cover;">
         <div>
             <h1>
-                <mark>Glänzende Ideen für leuchtende Augen</mark>
+                <mark><?= $hero_text; ?></mark>
             </h1>
             <button class="hero-btn">Angebot einholen</button>
         </div>

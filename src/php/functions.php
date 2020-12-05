@@ -20,6 +20,12 @@ function register_my_menus() {
      );
 }
 
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+
+add_filter('upload_mimes', 'cc_mime_types');
 add_action( 'init', 'register_my_menus' );
 add_action( 'after_setup_theme', 'add_title_tag');
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_and_styles' );
