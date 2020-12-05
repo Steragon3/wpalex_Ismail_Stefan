@@ -1,6 +1,5 @@
 <?php 
     get_header();
-    require_once("pageheader.php");
 
         if(have_posts()){
             while(have_posts()){
@@ -8,7 +7,7 @@
                 the_content();
             }
         } else{
-            echo "<p>nichts da :(</p>";
+            echo "<p>Ich kann nicht kontaktiert werden.</p>";
         }
 
     wp_reset_postdata();
