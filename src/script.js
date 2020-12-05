@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const burgerButton = document.querySelector("#burger-button")
-    const navLinks = document.querySelector(".menu")[0]
+    const navLinks = document.querySelector("#menu-header-menu")
 
     burgerButton.addEventListener("click", () => {
+        console.log("click")
         burgerButton.classList.toggle("is-active")
         navLinks.classList.toggle("active-links")
         

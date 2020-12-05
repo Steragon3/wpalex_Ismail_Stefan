@@ -4,7 +4,7 @@
 
         <nav>
             <button id="burger-button" class="hamburger hamburger--squeeze" type="button"
-            aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+            aria-label="Menu" aria-controls="menu-header-menu" aria-expanded="false">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>

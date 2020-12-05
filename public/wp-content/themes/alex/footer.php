@@ -1,7 +1,10 @@
+<?php
+$year = date('Y');
+?>
 <div class="footerwrapper">
     <footer>
         <section class="impressum">
-            <p class="left">&copy; Alex Mayer 2020</p>
+            <p class="left">&copy; Alex Mayer <?php echo $year;?></p>
             <nav class="right">
                     <a href="#">Impressum</a>
                     |

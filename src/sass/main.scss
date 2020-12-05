@@ -142,16 +142,17 @@ header{
             grid-column: 2/3;
 
             a{
-                width: 100%;
+                //width: 100%;
                 &:hover{
-                    
                     background-color: $blueBg;
                     transition: all linear .1s;
                 }
             }
             .active{
-                border-bottom: $blueAccent solid 3px;
-                color: $blueAccent;
+                a{
+                    border-bottom: $blueAccent solid 2px;
+                    color: $blueAccent;
+                }
             }       
         }
         div{

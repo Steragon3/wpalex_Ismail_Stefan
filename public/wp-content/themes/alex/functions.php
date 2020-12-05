@@ -2,8 +2,8 @@
 
 // enqueue scripts and styles
 function enqueue_scripts_and_styles() {
-    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.b5ba2f6616f3c4a6dc65.css?6f2e430fc7a47fe3708c', array(), null, false);
-    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?6f2e430fc7a47fe3708c', array(), null, false );
+    wp_enqueue_style('main-styles', get_template_directory_uri().'/main.92017458f82d591313f5.css?b1826b670882921a476f', array(), null, false);
+    wp_enqueue_script( 'main-js', get_template_directory_uri().'/main.js?b1826b670882921a476f', array(), null, false );
 }
 
 // enable dynamic title tags
@@ -25,11 +25,18 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 add_filter('upload_mimes', 'cc_mime_types');
 add_action( 'init', 'register_my_menus' );
 add_action( 'after_setup_theme', 'add_title_tag');
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_and_styles' );
-
 add_theme_support( 'post-thumbnails' );
 ?>
 
